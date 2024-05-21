@@ -1,0 +1,94 @@
+ <header>
+    <div class="header">
+        <div class="container"> 
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="files/mnlkingpinlogosmall.png" alt="an image of mnl kingpin south" width="150"></a>
+                </div>
+                <nav>
+                    <ul id="MenuContents">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="allproducts1.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contacts.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <button type="submit"><img src="files/searchicon.png" alt="an image of mnl kingpin south" width="20" height="20"></button>
+                </div>
+                <a href="addtocart.html"><img src="files/shopping-bag.png" alt="an image of mnl kingpin south" width="30" height="30"></a>
+                <img src="files/pngwing.com(43).png" alt="an image of mnl kingpin south" width="30" height="30" class="menu-button" onclick="menutoggle()">
+            
+                <div class="nav container">
+                    <i class='bx bxs-shopping-bag' style='color:#ffffff' id="cart-icon" data-quantity="0"></i>
+                    <div class="cart">
+                        <h2 class="cart-title">Your Cart</h2>
+                        <div class="cart-content">
+                            <div class="cart-box">
+                                <img src="files/kingsjersey.png" alt="" class="cart-img" />
+                                <div class="detail-box">
+                                    <div class="cart-product-title">Product Jersey</div>
+                                    <div class="cart-price">₱680.00</div>
+                                    <input 
+                                    type="number" 
+                                    name="" 
+                                    id="" 
+                                    value="1" 
+                                    class="cart-quantity"
+                                    />
+                                </div>
+                                <i class="bx bxs-trash-alt cart-remove"></i>
+                            </div>
+                        </div>
+                        <div class="total">
+                            <div class="total-title">Total</div>
+                            <div class="total-title">₱0.00</div>
+                        </div>
+                        <button type="button" class="btn-buy">Pay Now</button>
+                        <i class='bx bx-x' id="close-cart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+
+
+
+<header>
+    <div class="nav container">
+        <a href="#" class="logo">Ecommerce</a>
+        <i class='bx bxs-shopping-bag' style='color:black' id="cart-icon" data-quantity="0"></i>
+                    <div class="cart">
+                        <h2 class="cart-title">Your Cart</h2>
+                        <div class="cart-content">
+                            <div class="cart-box">
+                                <img src="files/kingsjersey.png" alt="" class="cart-img" />
+                                <div class="detail-box">
+                                    <div class="cart-product-title">Product Jersey</div>
+                                    <div class="cart-price">₱680.00</div>
+                                    <input 
+                                    type="number" 
+                                    name="" 
+                                    id="" 
+                                    value="1" 
+                                    class="cart-quantity"
+                                    />
+                                </div>
+                                <i class="bx bxs-trash-alt cart-remove"></i>
+                            </div>
+                        </div>
+                        <div class="total">
+                            <div class="total-title">Total</div>
+                            <div class="total-title">₱0.00</div>
+                        </div>
+                        <button type="button" class="btn-buy">Pay Now</button>
+                        <i class='bx bx-x' id="close-cart"></i>
+                    </div>
+    </div>
+   </header>

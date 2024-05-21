@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MNL Kingpin South</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container"> 
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="files/mnlkingpinlogosmall.png" alt="an image of mnl kingpin south" width="150"></a>
+                </div>
+                <nav>
+                    <ul id="MenuContents">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="allproducts1.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contacts.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <button type="submit"><img src="files/searchicon.png" alt="an image of mnl kingpin south" width="20" height="20"></button>
+                </div>
+                <a href="addtocart.html"><img src="files/shopping-bag.png" alt="an image of mnl kingpin south" width="30" height="30"></a>
+                <img src="files/pngwing.com(43).png" alt="an image of mnl kingpin south"  width="30" height="30" class="menu-button" onclick="menutoggle()">
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-2-texts">
+          <div class="store-info">
+            <h3>Visit Our Store</h3>
+            <div class="map-container">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15453.993187383443!2d121.036502!3d14.4560524!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397cf708a4674c7%3A0xcfd8ba9cd954821!2sMNL%20Kingpin%20South!5e0!3m2!1sen!2sph!4v1709662495837!5m2!1sen!2sph" width="1500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <br>
+            <br>
+            <div class="contact-info">
+              <h2>Address:</h2> <h4>F24P+CJC, Dr Arcadio Santos Ave, Park and Shop Incorporated Building, Parañaque, 1700 Metro Manila</h4> 
+              <br>
+              <h2>Telephone:</h2> <h4>+63 (2) 123-4567</h4> 
+              <br>
+              <h2>Email:</h2> <h4>veritasflip@gmail.com</h4> 
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br>
+      <br>
+      <br>
+
+
+   
+
+  <div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>© 2024 MNL Kingpin South. All Rights Reserved.</h3>
+                <div class="subscription-bar">
+                    <input type="text" placeholder="Enter Email Address">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="files/mnlkingpinlogosmall.png" alt="an image of mnl kingpin south">
+                <nav>
+                    <ul id="MenuContents">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="allproducts1.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contacts.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-col-3">
+                <h3>Follow Us!</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+            </div>
+    </div>
+</div>
+
+
+  <script>
+    var MenuContents = document.getElementById("MenuContents");
+
+    MenuContents.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuContents.style.maxHeight == "0px")
+        {
+            MenuContents.style.maxHeight = "200px";
+        }
+        else
+        {
+            MenuContents.style.maxHeight = "0px";
+        }
+    }
+  </script>
+    
+</body> 
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MNL Kingpin South</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container"> 
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="files/mnlkingpinlogosmall.png" width="150"></a>
+                </div>
+                <nav>
+                    <ul id="MenuContents">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="allproducts1.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contacts.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <button type="submit"><img src="files/searchicon.png" width="20" height="20"></button>
+                </div>
+                <a href="addtocart.html"><img src="files/shopping-bag.png" width="30" height="30"></a>
+                <img src="files/pngwing.com (43).png"  width="30" height="30" class="menu-button" onclick="menutoggle()">
+            </div>
+        </div>
+    </div>
+
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>All Products</h2>
+        </div>
+    
+        <table class="items">
+            <tr>
+                <td>
+                    <div class="col-4">
+                        <a href="product-details-dunklowbrazil.html"><img src="files/kingsjersey.png"></a>
+                        <h3>Fox Jersey</h3>
+                        <h5>Your Sweetest Jersey came in town.</h5>
+                        <p>₱680.00</p>
+                    </div>
+                    <input type="number" value="1">
+                    <a href="orderAlert.html" class="btn2">Add to Cart</a>
+                </td>
+                <td>
+                    <div class="col-4">
+                        <a href="product-details-dunklowcacao.html"><img src="files/lakersjersey.png"></a>
+                        <h3>James Jersey</h3>
+                        <h5>Your Sweetest Jersey came in town.</h5>
+                        <p>₱680.00</p>
+                    </div>
+                    <input type="number" value="1">
+                    <a href="orderAlert.html" class="btn2">Add to Cart</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="col-4">
+                        <a href="product-details-dunklowpurple.html"><img src="files/mavsjersey.png"></a>
+                        <h3>Luka Jersey</h3>
+                        <h5>Your Sweetest Jersey came in town.</h5>
+                        <p>₱680.00</p>
+                    </div>
+                    <input type="number" value="1">
+                    <a href="orderAlert.html" class="btn2">Add to Cart</a>
+                </td>
+                <td>
+                    <div class="col-4">
+                        <a href="product-details-dunklowolive.html"><img src="files/milwaukeejersey.png"></a>
+                        <h3>Lillard Jersey</h3>
+                        <h5>Your Sweetest Jersey came in town.</h5>
+                        <p>₱680.00</p>
+                    </div>
+                    <input type="number" value="1">
+                    <a href="orderAlert.html" class="btn2">Add to Cart</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="col-4">
+                        <a href="product-details-dunklowfog.html"><img src="files/okcjersey.png"></a>
+                        <h3>Holmgren Jersey</h3>
+                        <h5>Your Sweetest Jersey came in town.</h5>
+                        <p>₱680.00</p>
+                    </div>
+                    <input type="number" value="1">
+                    <a href="orderAlert.html" class="btn2">Add to Cart</a>
+                </td>
+                <td>
+                    <div class="col-4">
+                        <a href="product-details-dunklowpanda.html"><img src="files/spursjersey.png"></a>
+                        <h3>Wemby Jersey</h3>
+                        <h5>Your Sweetest Jersey came in town.</h5>
+                        <p>₱680.00</p>
+                    </div>
+                    <input type="number" value="1">
+                    <a href="orderAlert.html" class="btn2">Add to Cart</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+       
+  <div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>© 2024 MNL Kingpin South. All Rights Reserved.</h3>
+                <div class="subscription-bar">
+                    <input type="text" placeholder="Enter Email Address">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="files/mnlkingpinlogosmall.png">
+                <nav>
+                    <ul id="MenuContents">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="allproducts1.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contacts.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-col-3">
+                <h3>Follow Us!</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+            </div>
+    </div>
+</div>
+
+
+
+<script>
+var MenuContents = document.getElementById("MenuContents");
+
+MenuContents.style.maxHeight = "0px";
+
+function menutoggle(){
+    if(MenuContents.style.maxHeight == "0px")
+    {
+        MenuContents.style.maxHeight = "200px";
+    }
+    else
+    {
+        MenuContents.style.maxHeight = "0px";
+    }
+}
+</script>
+    
+</body> 
+</html>

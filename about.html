@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MNL Kingpin South</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style4.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container"> 
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="files/mnlkingpinlogosmall.png" alt="an image of mnl kingpin south" width="150"></a>
+                </div>
+                <nav>
+                    <ul id="MenuContents">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="allproducts1.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contacts.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <button type="submit"><img src="files/searchicon.png" alt="an image of mnl kingpin south" width="20" height="20"></button>
+                </div>
+                <a href="addtocart.html"><img src="files/shopping-bag.png" alt="an image of mnl kingpin south" width="30" height="30"></a>
+                <img src="files/pngwing.com(43).png" alt="an image of mnl kingpin south" width="30" height="30" class="menu-button" onclick="menutoggle()">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>Background</h2>
+                <h5></h5>
+                <div class="fakeimg">
+                <img src="images/shoppic.jpeg" alt="">
+                </div>
+                We are one of the most trusted Jersey makers in the Philippines, our unique designs has been very well known for years now and we aim to continue that reputation. Located at Dr Arcadio Santos Ave, Parañaque, Metro Manila, MNL Kingpin South was established in 2021 and has been the favorite go to Sports wear brand of Local celebrities and Players since. We create and innovate let us help you enhance your next team uniform with premium quality and great customer service.
+            </div>
+            <div class="card">
+                <h2>Featured Collections</h2>
+                <h5>Description</h5>
+                <div class="fakeimg" style="height:200px;">Image</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, earum.</p>
+                <p>Vitae fugiat deleniti assumenda facere enim culpa, consequuntur architecto officiis!</p>
+                <p>Sit, iure corrupti? Tenetur veritatis atque vero, possimus officiis corporis!</p>
+                <p>Cum provident eligendi in facere, atque consequuntur error commodi ab.</p>
+                <p>Totam inventore aspernatur nulla possimus debitis illo amet accusantium expedita.</p>
+                <p>Excepturi necessitatibus itaque aut debitis voluptas eligendi impedit fugit cum.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, expedita?</p>
+            </div>
+        </div>
+
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>Facebook Exclusive!</h2>
+                <h5>Only Available at our Facebook Page!</h5>
+                <div class="fakeimg" style="height:200px;">
+                    <a href="https://www.facebook.com/photo?fbid=849139433897862&set=a.468807138597762"> <img src="images/sabrinashorts.jpg" alt="" width="200" height="200"> </a>
+                </div>
+            </div>
+            <div class="card">
+                <h2>Instagram Exlcusive!</h2>
+                <h5>Only Available at our Instagram Page!</h5>
+                <div class="fakeimg" style="height:200px;">
+                    <a href="https://www.instagram.com/p/C6YY0s6P-GL/?img_index=1"> <img src="images/antendwards.jpg" alt="" width="200" height="200"> </a>
+                </div>
+            </div>
+            <div class="card">
+                <h2>Shopee Exclusive!</h2>
+                <h5>Only Available at our Shopee Store!</h5>
+                <div class="fakeimg" style="height:200px;">
+                    <a href="https://www.facebook.com/photo?fbid=849139433897862&set=a.468807138597762"> <img src="images/sabrinashorts.jpg" alt="" width="200" height="200"> </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+
+  <div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>© 2024 MNL Kingpin South. All Rights Reserved.</h3>
+                <div class="subscription-bar">
+                    <input type="text" placeholder="Enter Email Address">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="files/mnlkingpinlogosmall.png" alt="an image of mnl kingpin south">
+                <nav>
+                    <ul id="MenuContents2">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="allproducts1.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contacts.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-col-3">
+                <h3>Follow Us!</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+            </div>
+    </div>
+</div>
+
+
+  <script>
+    var MenuContents = document.getElementById("MenuContents");
+
+    MenuContents.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuContents.style.maxHeight == "0px")
+        {
+            MenuContents.style.maxHeight = "200px";
+        }
+        else
+        {
+            MenuContents.style.maxHeight = "0px";
+        }
+    }
+  </script>
+    
+</body> 
+</html>

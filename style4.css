@@ -1,0 +1,69 @@
+/* Create two unequal columns that float next to each other */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Left column */
+.leftcolumn {
+    flex: 3;
+    padding: 0 20px;
+}
+
+/* Right column */
+.rightcolumn {
+    flex: 1;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+    width: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.card h2{
+    text-align: center;
+}
+
+/* Ensure cards align properly */
+.leftcolumn .card:first-child {
+    margin-top: 0;
+}
+
+  /*Footer*/
+  .footer {
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  /*Responsive Layout - when the screen is*/
+  @media screen and (max-width: 800px) {
+    .leftcolumn,
+    .rightcolumn {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  /*Responsive Layout*/
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
