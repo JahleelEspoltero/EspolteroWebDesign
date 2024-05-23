@@ -232,7 +232,7 @@ document.addEventListener('DOMContentLoaded', () => {
             var price = cartBox.querySelector('.cart-price').innerText;
             var quantity = cartBox.querySelector('.cart-quantity').value;
             var productImg = cartBox.querySelector('.cart-img').src;
-
+    
             var tr = document.createElement('tr');
             tr.innerHTML = `
                 <td><img src="${productImg}" alt="" style="width: 100px;"></td>
@@ -243,11 +243,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 <td></td>
             `;
             cartItemsList.appendChild(tr);
-
+    
             // Add remove button event listener to newly added item
             tr.querySelector('.cart-remove').addEventListener('click', removeCartItem);
         }
-
+    
         updateTotal(); // Update total after rendering list
     }
 
