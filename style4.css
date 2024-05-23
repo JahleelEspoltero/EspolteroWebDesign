@@ -1,69 +1,331 @@
-/* Create two unequal columns that float next to each other */
+/* Body styles */
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+nav{
+  flex: 1;
+  text-align: center;
+}
+nav ul{
+  display: inline-block;
+  list-style-type: none;
+}
+nav ul li{
+  display: inline-block;
+  margin-right: 20px;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+p{
+  color: white;
+}
+
+
+section{
+  padding: 4rem 0 3rem;
+}
+
+.container{
+  max-width: 1068px;
+  margin: auto;
+  width: 100%;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white; /* Updated to white */
+  box-shadow: 0 1px 4px hsla(0, 0%, 0%, 0.1);
+  z-index: 100;
+  padding: 0px 0; /* Adjusted padding */
+  margin-bottom: 1.8rem;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px; /* Adjusted padding */
+}
+
+.logo{
+  font-size: 1.1rem;
+  color: black;
+  font-weight: 600;
+}
+
+.search-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 300px;
+  margin: 20px auto;
+}
+
+.search-bar input[type="text"] {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 20px 0 0 20px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.search-bar input[type="text"]:focus {
+  border-color: black;
+}
+
+.search-bar button[type="submit"] {
+  background: black;
+  border: none;
+  padding: 10px;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-bar button[type="submit"] img {
+  width: 20px;
+  height: 20px;
+}
+
+.search-bar .search-suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 20px 20px;
+  max-height: 150px;
+  overflow-y: auto;
+  display: none; /* Hide by default */
+  z-index: 10;
+  color: black;
+}
+
+.search-bar .search-suggestions .search-suggestion {
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.search-bar .search-suggestions .search-suggestion:hover {
+  background: #f1f1f1;
+}
+
+/* Scrollbar styling */
+.search-bar .search-suggestions::-webkit-scrollbar {
+  width: 6px;
+}
+
+.search-bar .search-suggestions::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+.search-bar .search-suggestions::-webkit-scrollbar-thumb:hover {
+  background: #b3b3b3;
+}
+
+/* Main content layout */
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
 .row {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-/* Left column */
 .leftcolumn {
-    flex: 3;
-    padding: 0 20px;
+  flex: 2;
+  margin-right: 20px;
 }
 
-/* Right column */
 .rightcolumn {
-    flex: 1;
-    background-color: #f1f1f1;
-    padding-left: 20px;
+  flex: 1;
 }
 
-/* Fake image */
-.fakeimg {
-    width: auto;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Add a card effect for articles */
 .card {
-    background-color: white;
-    padding: 20px;
-    margin-top: 20px;
-    display: inline-block;
-    vertical-align: top;
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.card h2{
-    text-align: center;
+.card h1, .card h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
-/* Ensure cards align properly */
-.leftcolumn .card:first-child {
-    margin-top: 0;
+.card p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 10px;
 }
 
-  /*Footer*/
-  .footer {
-    padding: 20px;
-    text-align: center;
-    margin-top: 20px;
+.fakeimg {
+  background-color: #ddd;
+  height: 200px;
+  margin-bottom: 15px;
+}
+
+.fakeimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*-------footer--------*/
+
+.footer{
+  background: #000;
+  color: #8a8a8a;
+  font-size: 14px;
+  padding: 60px 0 20px;
+  width: 100%;
+}
+.footer p{
+  color: #b3b3b3;
+  text-align: center;
+}
+.footer h3{
+  color: #fff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+.footer-col-1{
+  flex-basis: 30%;
+}
+.footer-col-2{
+  flex: 1;
+  text-align: center;
+}
+.footer-col-2 img{
+  width: 180px;
+  margin-bottom: 20px;
+}
+.footer-col-3, .footer-col-4{
+  flex-basis: 12%;
+  text-align: center;
+}
+
+.subscription-bar input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.subscription-bar input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.subscription-bar input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.footer-col-2 nav ul {
+  list-style-type: none;
+}
+
+.footer-col-2 nav ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col-2 nav ul li a {
+  text-decoration: none;
+  color: #dddddd;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-col-2 nav ul li a:hover {
+  color: #aaaaaa;
+}
+
+.footer-col-3 ul {
+  list-style-type: none;
+}
+
+.footer-col-3 ul li {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+  .row {
+      flex-direction: column;
   }
 
-  /*Responsive Layout - when the screen is*/
-  @media screen and (max-width: 800px) {
-    .leftcolumn,
-    .rightcolumn {
+  .rightcolumn {
+      margin-top: 20px;
+  }
+
+  .search-bar {
+      margin-right: 0;
+      margin-bottom: 20px;
+  }
+
+  .subscription-bar input[type="text"] {
       width: 100%;
-      padding: 0;
-    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav {
+      flex-direction: column;
+      align-items: flex-start;
   }
 
-  /*Responsive Layout*/
-  @media screen and (max-width: 400px) {
-    .topnav a {
-      float: none;
-      width: 100%;
-    }
+  .nav nav ul {
+      flex-direction: column;
   }
+
+  .nav nav ul li {
+      margin-bottom: 10px;
+  }
+
+  .search-bar {
+      flex: 1;
+      margin-right: 0;
+  }
+}
+
+.contact-info h2, h4{
+  text-align: center;
+}

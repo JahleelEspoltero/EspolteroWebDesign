@@ -69,20 +69,9 @@ header {
     cursor: pointer;
 }
 
-.cart.active {
-    transform: translateX(0);
-}
-
-#cart-icon,
-.bx-shopping-bag,
-.bx-x {
-    color: black !important; /* Change to your desired color */
-}
-
 #cart-icon[data-quantity="0"]::after {
     content: "";
 }
-
 
 #cart-icon[data-quantity]::after {
     content: attr(data-quantity);
@@ -93,7 +82,6 @@ header {
     height: 20px;
     background: green;
     border-radius: 100%;
-    color: white;
     font-size: 12px; /* Adjust font size as needed */
     font-weight: bold;
     display: flex;
@@ -345,21 +333,6 @@ h2 {
     background: hsl(249, 32%, 17%);
 }
 
-.product-box select {
-    margin-top: 10px;
-    padding: 5px 10px; /* Adjusted padding */
-    font-size: 14px; /* Adjusted font size */
-    border: 1px solid #ccc;
-    width: 50%;
-    cursor: pointer;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    background: no-repeat;
-    background-position: 95% 50%;
-    background-color: white;
-}
-
 
 /* for success page */
 
@@ -437,143 +410,3 @@ h2 {
     }
 }
 
-.search-bar {
-    position: relative;
-    display: flex;
-    align-items: center;
-    width: 300px;
-    margin: 20px auto;
-}
-
-.search-bar input[type="text"] {
-    width: 100%;
-    padding: 10px 15px;
-    border: 1px solid #ccc;
-    border-radius: 20px 0 0 20px;
-    outline: none;
-    transition: border-color 0.3s;
-}
-
-.search-bar input[type="text"]:focus {
-    border-color: black;
-}
-
-.search-bar button[type="submit"] {
-    background: black;
-    border: none;
-    padding: 10px;
-    border-radius: 0 20px 20px 0;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.search-bar button[type="submit"] img {
-    width: 20px;
-    height: 20px;
-}
-
-.search-bar .search-suggestions {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background: #fff;
-    border: 1px solid #ccc;
-    border-top: none;
-    border-radius: 0 0 20px 20px;
-    max-height: 150px;
-    overflow-y: auto;
-    display: none; /* Hide by default */
-    z-index: 10;
-    color: black;
-}
-
-.search-bar .search-suggestions .search-suggestion {
-    padding: 10px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.search-bar .search-suggestions .search-suggestion:hover {
-    background: #f1f1f1;
-}
-
-/* Scrollbar styling */
-.search-bar .search-suggestions::-webkit-scrollbar {
-    width: 6px;
-}
-
-.search-bar .search-suggestions::-webkit-scrollbar-thumb {
-    background: #ccc;
-    border-radius: 10px;
-}
-
-.search-bar .search-suggestions::-webkit-scrollbar-thumb:hover {
-    background: #b3b3b3;
-}
-
-
-
-.checkout-form {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.checkout-form h2 {
-    margin-bottom: 20px;
-    font-size: 1.5em;
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-group label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.form-group input[type="text"],
-.form-group input[type="tel"] {
-    width: 100%;
-    padding: 8px;
-    font-size: 1em;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-#card-element {
-    margin-top: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-#card-errors {
-    margin-top: 10px;
-    color: red;
-    font-size: 0.9em;
-}
-
-button[type="submit"] {
-    background-color: #000000;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1em;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-}
-
-button[type="submit"]:hover {
-    background-color: #000000;
-}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MNL Kingpin South</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="nav container">
+            <a href="index.html" class="logo"><img src="files/mnlkingpinlogosmallblack.png" alt="" width="70" height="70"></a>
+            <nav>
+                <ul id="MenuContents">
+                    <li><a href="index.html" style="color: black;">Home</a></li>
+                    <li><a href="productpage.html" style="color: black;">Products</a></li>
+                    <li><a href="about.html" style="color: black;">About</a></li>
+                    <li><a href="contacts.html" style="color: black;">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button type="submit"><img src="files/searchicon.png" alt="an image of mnl kingpin south" width="20" height="20"></button>
+                <div class="search-suggestions"></div>
+            </div>
+            <i class='bx bx-shopping-bag' id="cart-icon" style="color: black;" data-quantity="0"></i>
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+                <div class="cart-content" style="color: black;">
+                    <!-- Cart items will be dynamically added here -->
+                </div>
+                <div class="total">
+                    <div class="total-title">Total:</div>
+                    <div class="total-price">₱0.00</div>
+                </div>
+                <button type="button" class="btn-buy">Pay Now</button>
+                <i class='bx bx-x' id="close-cart"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="shop container">
+            <h2 class="section-title" style="color: black;">Checkout</h2>
+            <form id="payment-form" class="checkout-form">
+                <div class="form-group">
+                    <label for="name" style="color: black;">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone" style="color: black;">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="payment-method" style="color: black;">Select Payment Method:</label>
+                    <select id="payment-method" name="payment-method">
+                        <option value="gcash" style="color: black;">GCash</option>
+                        <option value="bank-transfer" style="color: black;">Bank Transfer</option>
+                    </select>
+                </div>
+
+                <div id="gcash-payment" class="form-group">
+                    <label for="gcash-number" style="color: black;">GCash Phone Number:</label>
+                    <input type="tel" id="gcash-number" name="gcash-number">
+                </div>
+
+                <div id="bank-transfer-details" class="form-group" style="display: none;">
+                    <label for="bank-name" style="color: black;">Bank Name:</label>
+                    <input type="text" id="bank-name" name="bank-name">
+                    <label for="account-name" style="color: black;">Account Name:</label>
+                    <input type="text" id="account-name" name="account-name">
+                    <label for="account-number" style="color: black;">Account Number:</label>
+                    <input type="text" id="account-number" name="account-number">
+                </div>
+
+                <div class="cart-items">
+                    <h3 style="color: black;">Items in Your Cart:</h3>
+                    <ul id="cart-items-list" style="color: black;"></ul>
+                </div>
+                <div class="total">
+                    <div class="total-title">Total:</div>
+                    <div class="total-price">₱0.00</div>
+                </div>
+                <a href="success.html"><button id="pay-now-button" type="button">Pay Now</button></a>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>© 2024 MNL Kingpin South. All Rights Reserved.</h3>
+                    <div class="subscription-bar">
+                        <input type="text" placeholder="Enter Email Address">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="files/mnlkingpinlogosmall.png" alt="an image of mnl kingpin south">
+                    <nav>
+                        <ul id="MenuContents">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="productpage.html">Products</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contacts.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Follow Us!</h3>
+                    <ul>
+                        <a href="https://www.facebook.com/mnlkingpinsouth"><li>Facebook</li></a>
+                        <a href="https://www.instagram.com/mnlkingpinsouth/"><li>Instagram</li></a>
+                        <a href="https://shopee.ph/mnlkingpinsouth"><li>Shopee</li></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="checkout.js"></script>
+</body>
+</html>
