@@ -577,3 +577,109 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #000000;
 }
+
+
+
+.total-section {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.divider {
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.total2 {
+    display: inline-block;
+}
+
+.total-title2, .total-price2 {
+    color: black;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+#pay-now-button {
+    display: inline-block;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 2rem;
+    background: var(--text-color);
+    color: var(--bg-color);
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+#pay-now-button:hover {
+    background-color: black;
+}
+
+.section-title {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: black;
+}
+
+/* Updated styles for total price section */
+.cart-summary {
+    margin-top: 20px;
+    padding-top: 10px;
+    text-align: right;
+}
+
+.cart-summary .item {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.cart-summary .item:last-child {
+    margin-bottom: 0;
+}
+
+.cart-summary .item .name {
+    min-width: 150px;
+    text-align: left; /* Adjust this if necessary */
+}
+
+.cart-summary .item .price {
+    margin-left: 20px;
+}
+
+.cart-summary .total {
+    font-weight: bold;
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.cart-summary .total .name {
+    min-width: 150px;
+    text-align: left; /* Adjust this if necessary */
+}
+
+.cart-summary .total .price {
+    margin-left: 20px;
+}
+
+/* Divider style */
+.divider {
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+
+
+
+
+
