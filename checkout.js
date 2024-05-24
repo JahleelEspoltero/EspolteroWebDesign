@@ -150,63 +150,63 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 }
 
-    function saveCartItems() {
-        var cartContent = document.querySelector('.cart-content');
-        var cartBoxes = cartContent.getElementsByClassName('cart-box');
-        var cartItems = [];
+function saveCartItems() {
+    var cartContent = document.querySelector('.cart-content');
+    var cartBoxes = cartContent.getElementsByClassName('cart-box');
+    var cartItems = [];
 
-        for (var i = 0; i < cartBoxes.length; i++) {
-            var cartBox = cartBoxes[i];
-            var titleElement = cartBox.querySelector('.cart-product-title');
-            var sizeElement = cartBox.querySelector('.cart-product-size');
-            var priceElement = cartBox.querySelector('.cart-price');
-            var quantityElement = cartBox.querySelector('.cart-quantity');
-            var productImg = cartBox.querySelector('.cart-img').src;
+    for (var i = 0; i < cartBoxes.length; i++) {
+        var cartBox = cartBoxes[i];
+        var titleElement = cartBox.querySelector('.cart-product-title');
+        var sizeElement = cartBox.querySelector('.cart-product-size');
+        var priceElement = cartBox.querySelector('.cart-price');
+        var quantityElement = cartBox.querySelector('.cart-quantity');
+        var productImg = cartBox.querySelector('.cart-img').src;
 
-            var item = {
-                title: titleElement.innerText,
-                size: sizeElement.innerText,
-                price: priceElement.innerText,
-                quantity: quantityElement.value,
-                productImg: productImg,
-            };
-            cartItems.push(item);
-        }
-
-        try {
-            localStorage.setItem('cartItems', JSON.stringify(cartItems));
-        } catch (e) {
-            console.error('Could not save cart items:', e);
-        }
+        var item = {
+            title: titleElement.innerText,
+            size: sizeElement.innerText,
+            price: priceElement.innerText,
+            quantity: quantityElement.value,
+            productImg: productImg,
+        };
+        cartItems.push(item);
     }
 
-    function loadCartItems() {
-        try {
-            var cartItems = localStorage.getItem('cartItems');
-            if (cartItems) {
-                cartItems = JSON.parse(cartItems);
-
-                for (var i = 0; i < cartItems.length; i++) {
-                    var item = cartItems[i];
-                    addProductToCart(item.title, item.price, item.productImg, item.size);
-
-                    var cartBoxes = document.getElementsByClassName('cart-box');
-                    var cartBox = cartBoxes[cartBoxes.length - 1];
-                    var quantityElement = cartBox.querySelector('.cart-quantity');
-                    quantityElement.value = item.quantity;
-                }
-            }
-
-            var cartTotal = localStorage.getItem('cartTotal');
-            if (cartTotal) {
-                totalPriceElements.forEach(el => el.innerText = "₱" + cartTotal);
-            }
-            updateCartIcon();
-            renderCartItemsList();
-        } catch (e) {
-            console.error('Could not load cart items:', e);
-        }
+    try {
+        localStorage.setItem('cartItems', JSON.stringify(cartItems));
+    } catch (e) {
+        console.error('Could not save cart items:', e);
     }
+}
+
+function loadCartItems() {
+    try {
+        var cartItems = localStorage.getItem('cartItems');
+        if (cartItems) {
+            cartItems = JSON.parse(cartItems);
+
+            for (var i = 0; i < cartItems.length; i++) {
+                var item = cartItems[i];
+                addProductToCart(item.title, item.price, item.productImg, item.size);
+
+                var cartBoxes = document.getElementsByClassName('cart-box');
+                var cartBox = cartBoxes[cartBoxes.length - 1];
+                var quantityElement = cartBox.querySelector('.cart-quantity');
+                quantityElement.value = item.quantity;
+            }
+        }
+
+        var cartTotal = localStorage.getItem('cartTotal');
+        if (cartTotal) {
+            totalPriceElements.forEach(el => el.innerText = "₱" + cartTotal);
+        }
+        updateCartIcon();
+        renderCartItemsList();
+    } catch (e) {
+        console.error('Could not load cart items:', e);
+    }
+}
 
     function updateCartIcon() {
         var cartContent = document.querySelector('.cart-content');
